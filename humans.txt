@@ -3,13 +3,21 @@
 
 # TEAM
 
-    <name> -- <role> -- <twitter>
+    Mark -- Coder, Confessor
 
 # THANKS
 
-    <name>
+    Vivid -- Be confessor
+	
 
 # TECHNOLOGY COLOPHON
 
-    HTML5, CSS3
+    HTML5, CSS3, javascript
     jQuery, Modernizr
+	bootstrap
+	
+# Site
+	Last update:2014/05/04
+	Language: Chinese
+	Doctype:HTML5
+	IDE: Sublime Text2, Notepad++, Photoshop
