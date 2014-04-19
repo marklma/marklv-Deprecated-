@@ -16,10 +16,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link type="text/plain" rel="author" href="humans.txt" />
     <link rel="stylesheet" href="css/bootstrap.min.css" media="screen" />
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css" />
+
+    <link rel="stylesheet" href="css/skin/blue.monday/jplayer.blue.monday.css" type="text/css" />
+    <link rel="stylesheet" href="css/main.css" />
+
     <link rel="icon" href="http://marklv.qiniudn.com/favicon.ico" type="image/x-icon" />
     <link rel="shortcut icon" href="http://marklv.qiniudn.com/favicon.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="apple-touch-icon-precomposed" href="http://marklv.qiniudn.com/apple-touch-icon-precomposed.png" />
 
     <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
 </head>
@@ -29,7 +33,7 @@
             <p class="browsehappy">您使用的浏览器已经<strong>过时</strong>。为了让您有更好的体验，请<a href="http://browsehappy.com/">升级您的浏览器</a>。</p>
         <![endif]-->
 
-    <div class="navbar navbar-default navbar-static-top" role="navigation" >
+    <div class="navbar navbar-default navbar-static-top" role="navigation">
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -40,7 +44,7 @@
                 </button>
                 <a class="navbar-brand" href="#">MarkLV</a>
             </div>
-            <p class="navbar-text"> A webside for a girl.</p>
+            <p class="navbar-text">A webside for a girl.</p>
             <div class="navbar-collapse collapse">
                 <form class="navbar-form navbar-right" role="form">
                     <button type="submit" class="btn btn-success">Yes?</button>&nbsp;or&nbsp;
@@ -53,10 +57,74 @@
     <!-- Main jumbotron for a primary marketing message or call to action -->
     <div class="jumbotron">
         <div class="container">
-            <h1>Hello, Vivid!</h1>
-            <p>This is a webside for a girl. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
-            <p><a class="btn btn-primary btn-lg" role="button">Learn more &raquo;</a>
-            </p>
+            <div class="row">
+                <div class="col-md-7">
+                    <h1>Hello, Vivid!</h1>
+                    <p>This is a webside for a girl. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
+                    <p><a class="btn btn-primary btn-lg" role="button">Learn more &raquo;</a>
+                    </p>
+                </div>
+                <div class="col-md-5">
+                    <!-- put jplayer in it -->
+                    <div id="jquery_jplayer_1" class="jp-jplayer"></div>
+                    <div id="jp_container_1" class="jp-audio">
+                        <div class="jp-type-playlist">
+                            <div class="jp-gui jp-interface">
+                                <ul class="jp-controls">
+                                    <li><a href="javascript:;" class="jp-previous" tabindex="1">previous</a>
+                                    </li>
+                                    <li><a href="javascript:;" class="jp-play" tabindex="1">play</a>
+                                    </li>
+                                    <li><a href="javascript:;" class="jp-pause" tabindex="1">pause</a>
+                                    </li>
+                                    <li><a href="javascript:;" class="jp-next" tabindex="1">next</a>
+                                    </li>
+                                    <li><a href="javascript:;" class="jp-stop" tabindex="1">stop</a>
+                                    </li>
+                                    <li><a href="javascript:;" class="jp-mute" tabindex="1" title="mute">mute</a>
+                                    </li>
+                                    <li><a href="javascript:;" class="jp-unmute" tabindex="1" title="unmute">unmute</a>
+                                    </li>
+                                    <li><a href="javascript:;" class="jp-volume-max" tabindex="1" title="max volume">max volume</a>
+                                    </li>
+                                </ul>
+                                <div class="jp-progress">
+                                    <div class="jp-seek-bar">
+                                        <div class="jp-play-bar"></div>
+                                    </div>
+                                </div>
+                                <div class="jp-volume-bar">
+                                    <div class="jp-volume-bar-value"></div>
+                                </div>
+                                <div class="jp-time-holder">
+                                    <div class="jp-current-time"></div>
+                                    <div class="jp-duration"></div>
+                                </div>
+                                <ul class="jp-toggles">
+                                    <li><a href="javascript:;" class="jp-shuffle" tabindex="1" title="shuffle">shuffle</a>
+                                    </li>
+                                    <li><a href="javascript:;" class="jp-shuffle-off" tabindex="1" title="shuffle off">shuffle off</a>
+                                    </li>
+                                    <li><a href="javascript:;" class="jp-repeat" tabindex="1" title="repeat">repeat</a>
+                                    </li>
+                                    <li><a href="javascript:;" class="jp-repeat-off" tabindex="1" title="repeat off">repeat off</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="jp-playlist">
+                                <ul>
+                                    <li></li>
+                                </ul>
+                            </div>
+                            <div class="jp-no-solution">
+                                <span>Update Required</span>
+                                To play the media you will need to either update your browser to a recent version or update your <a href="http://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a>.
+                            </div>
+                        </div>
+                    </div>
+                    <!-- jplayer end -->
+                </div>
+            </div>
         </div>
     </div>
 
@@ -114,14 +182,16 @@
     window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')
     </script>
     <script src="js/vendor/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/jquery.jplayer.min.js"></script>
+    <script type="text/javascript" src="js/jplayer.playlist.min.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
     <!--[if lt IE 9]>
 <bgsound src="http://marklv.qiniudn.com/marklv1.mp3"/>
 <![endif]-->
-    <audio autoplay="autoplay">
+    <!--  <audio autoplay="autoplay">
         <source src="http://marklv.qiniudn.com/marklv1.mp3" type="audio/mpeg" />
-    </audio>
+    </audio> -->
 </body>
 
 </html>
