@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="css/bootstrap.min.css" media="screen" />
     <link rel="stylesheet" href="css/bootstrap-theme.min.css" />
 
-    <link rel="stylesheet" href="css/skin/blue.monday/jplayer.blue.monday.css" type="text/css" />
+    <link rel="stylesheet" href="css/skin/circle.skin/circle.player.css" />
     <link rel="stylesheet" href="css/main.css" />
 
     <link rel="icon" href="http://marklv.qiniudn.com/favicon.ico" type="image/x-icon" />
@@ -29,7 +29,7 @@
 </head>
 
 <body>
-    <!--[if lt IE 7]>
+    <!--[if lt IE 8]>
             <p class="browsehappy">您使用的浏览器已经<strong>过时</strong>。为了让您有更好的体验，请<a href="http://browsehappy.com/">升级您的浏览器</a>。</p>
         <![endif]-->
 
@@ -58,69 +58,35 @@
     <div class="jumbotron">
         <div class="container">
             <div class="row">
-                <div class="col-md-7">
+                <div class="col-md-8">
                     <h1>Hello, Vivid!</h1>
                     <p>This is a webside for a girl. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
                     <p><a class="btn btn-primary btn-lg" role="button">Learn more &raquo;</a>
                     </p>
                 </div>
-                <div class="col-md-5">
-                    <!-- put jplayer in it -->
-                    <div id="jquery_jplayer_1" class="jp-jplayer"></div>
-                    <div id="jp_container_1" class="jp-audio">
-                        <div class="jp-type-playlist">
-                            <div class="jp-gui jp-interface">
-                                <ul class="jp-controls">
-                                    <li><a href="javascript:;" class="jp-previous" tabindex="1">previous</a>
-                                    </li>
-                                    <li><a href="javascript:;" class="jp-play" tabindex="1">play</a>
-                                    </li>
-                                    <li><a href="javascript:;" class="jp-pause" tabindex="1">pause</a>
-                                    </li>
-                                    <li><a href="javascript:;" class="jp-next" tabindex="1">next</a>
-                                    </li>
-                                    <li><a href="javascript:;" class="jp-stop" tabindex="1">stop</a>
-                                    </li>
-                                    <li><a href="javascript:;" class="jp-mute" tabindex="1" title="mute">mute</a>
-                                    </li>
-                                    <li><a href="javascript:;" class="jp-unmute" tabindex="1" title="unmute">unmute</a>
-                                    </li>
-                                    <li><a href="javascript:;" class="jp-volume-max" tabindex="1" title="max volume">max volume</a>
-                                    </li>
-                                </ul>
-                                <div class="jp-progress">
-                                    <div class="jp-seek-bar">
-                                        <div class="jp-play-bar"></div>
-                                    </div>
-                                </div>
-                                <div class="jp-volume-bar">
-                                    <div class="jp-volume-bar-value"></div>
-                                </div>
-                                <div class="jp-time-holder">
-                                    <div class="jp-current-time"></div>
-                                    <div class="jp-duration"></div>
-                                </div>
-                                <ul class="jp-toggles">
-                                    <li><a href="javascript:;" class="jp-shuffle" tabindex="1" title="shuffle">shuffle</a>
-                                    </li>
-                                    <li><a href="javascript:;" class="jp-shuffle-off" tabindex="1" title="shuffle off">shuffle off</a>
-                                    </li>
-                                    <li><a href="javascript:;" class="jp-repeat" tabindex="1" title="repeat">repeat</a>
-                                    </li>
-                                    <li><a href="javascript:;" class="jp-repeat-off" tabindex="1" title="repeat off">repeat off</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="jp-playlist">
-                                <ul>
-                                    <li></li>
-                                </ul>
-                            </div>
-                            <div class="jp-no-solution">
-                                <span>Update Required</span>
-                                To play the media you will need to either update your browser to a recent version or update your <a href="http://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a>.
-                            </div>
+                <div class="col-md-4">
+                    <!-- The jPlayer div must not be hidden. Keep it at the root of the body element to avoid any such problems. -->
+                    <div id="jquery_jplayer_1" class="cp-jplayer"></div>
+                    <!-- The container for the interface can go where you want to display it. Show and hide it as you need. -->
+                    <div id="cp_container_1" class="cp-container">
+                        <div class="cp-buffer-holder">
+                            <!-- .cp-gt50 only needed when buffer is > than 50% -->
+                            <div class="cp-buffer-1"></div>
+                            <div class="cp-buffer-2"></div>
                         </div>
+                        <div class="cp-progress-holder">
+                            <!-- .cp-gt50 only needed when progress is > than 50% -->
+                            <div class="cp-progress-1"></div>
+                            <div class="cp-progress-2"></div>
+                        </div>
+                        <div class="cp-circle-control"></div>
+                        <ul class="cp-controls">
+                            <li><a class="cp-play" tabindex="1">play</a>
+                            </li>
+                            <li><a class="cp-pause" style="display:none;" tabindex="1">pause</a>
+                            </li>
+                            <!-- Needs the inline style here, or jQuery.show() uses display:inline instead of display:block -->
+                        </ul>
                     </div>
                     <!-- jplayer end -->
                 </div>
@@ -183,7 +149,10 @@
     </script>
     <script src="js/vendor/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/jquery.jplayer.min.js"></script>
-    <script type="text/javascript" src="js/jplayer.playlist.min.js"></script>
+    <script type="text/javascript" src="js/jquery.transform2d.js"></script>
+    <script type="text/javascript" src="js/jquery.grab.js"></script>
+    <script type="text/javascript" src="js/mod.csstransforms.min.js"></script>
+    <script type="text/javascript" src="js/circle.player.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
     <!--[if lt IE 9]>
