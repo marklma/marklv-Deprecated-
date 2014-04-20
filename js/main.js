@@ -11,14 +11,20 @@ $(document).ready(function() {
         oga: "http://marklv.qiniudn.com/FirstLove.ogg"
     }, {
         title: "なきむし。",
-        mp3: "//marklv.qiniudn.com/marklv1.mp3",
-        oga: "//marklv.qiniudn.com/marklv1.ogg"
+        mp3: "http://marklv.qiniudn.com/marklv1.mp3",
+        oga: "http://marklv.qiniudn.com/marklv1.ogg"
     }, {
         title: "ddl",
         mp3: "dd.mp3"
     }], {
+        playlistOptions: {
+            autoPlay: true
+        },
         swfPath: "js",
-        supplied: "mp3,oga"
+        supplied: "mp3,ogg",
+        preload: "auto",
+        wmode: "window",
+        solution: "flash,html"
     });
 });
 //]]>

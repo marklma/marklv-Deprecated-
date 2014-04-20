@@ -2,11 +2,14 @@
    Author's custom styles
    ========================================================================== */
  .jumbotron {
-    background-image:url("http://marklv.qiniudn.com/imgjumbotronbg.jpg");
-    background-repeat:no-repeat;
-    background-attachment:scroll;
-    background-size:100%;
-    background-position:top;
-    overflow: hidden;
-    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://marklv.qiniudn.com/imgjumbotronbg.jpg', sizingMethod='scale');
+  background-image:url("http://marklv.qiniudn.com/imgjumbotronbg.jpg");
+  background-repeat:no-repeat;
+  background-attachment:scroll;
+  background-size:100%;
+  background-position:top;
+  overflow: hidden;
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://marklv.qiniudn.com/imgjumbotronbg.jpg', sizingMethod='scale');
+}
+.navbar-default {
+  background-image: linear-gradient(to bottom, #99CC00 0px, #F8F8F8 100%);
 }
