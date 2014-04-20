@@ -95,7 +95,6 @@ CirclePlayer.prototype = {
 			$(this).jPlayer("setMedia", self.media);
 			self._initCircleControl();
 		});
-
 		this.player.bind($.jPlayer.event.play + this.eventNamespace, function(event) {
 			$(this).jPlayer("pauseOthers");
 		});

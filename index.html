@@ -58,35 +58,51 @@
     <div class="jumbotron">
         <div class="container">
             <div class="row">
-                <div class="col-md-8">
+                <div class="col-md-6">
                     <h1>Hello, Vivid!</h1>
                     <p>This is a webside for a girl. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
                     <p><a class="btn btn-primary btn-lg" role="button">Learn more &raquo;</a>
                     </p>
                 </div>
+                <div class="col-md-2">
+
+                </div>
                 <div class="col-md-4">
                     <!-- The jPlayer div must not be hidden. Keep it at the root of the body element to avoid any such problems. -->
-                    <div id="jquery_jplayer_1" class="cp-jplayer"></div>
+                    <div id="jquery_jplayer_1" class="jp-jplayer"></div>
                     <!-- The container for the interface can go where you want to display it. Show and hide it as you need. -->
-                    <div id="cp_container_1" class="cp-container">
-                        <div class="cp-buffer-holder">
-                            <!-- .cp-gt50 only needed when buffer is > than 50% -->
-                            <div class="cp-buffer-1"></div>
-                            <div class="cp-buffer-2"></div>
+                    <div id="jp_container_1" class="jp-container jp-audio">
+                        <div class="jp-buffer-holder">
+                            <!-- .jp-gt50 only needed when buffer is > than 50% -->
+                            <div class="jp-buffer-1"></div>
+                            <div class="jp-buffer-2"></div>
                         </div>
-                        <div class="cp-progress-holder">
-                            <!-- .cp-gt50 only needed when progress is > than 50% -->
-                            <div class="cp-progress-1"></div>
-                            <div class="cp-progress-2"></div>
+                        <div class="jp-progress-holder">
+                            <!-- .jp-gt50 only needed when progress is > than 50% -->
+                            <div class="jp-progress-1"></div>
+                            <div class="jp-progress-2"></div>
                         </div>
-                        <div class="cp-circle-control"></div>
-                        <ul class="cp-controls">
-                            <li><a class="cp-play" tabindex="1">play</a>
-                            </li>
-                            <li><a class="cp-pause" style="display:none;" tabindex="1">pause</a>
-                            </li>
-                            <!-- Needs the inline style here, or jQuery.show() uses display:inline instead of display:block -->
-                        </ul>
+                        <div class="jp-type-playlist">
+                            <div class="jp-circle-control"></div>
+                            <div class="jp-gui jp-interface">
+                                <ul class="jp-controls">
+                                    <li><a class="jp-play" href="javascript:;" tabindex="1">play</a>
+                                    </li>
+                                    <li><a class="jp-pause" style="display:none;" href="javascript:;" tabindex="1">pause</a>
+                                    </li>
+                                    <!-- Needs the inline style here, or jQuery.show() uses display:inline instead of display:block -->
+                                </ul>
+                            </div>
+                            <div style="display:none;" class="jp-playlist">
+                                <ul>
+                                    <li></li>
+                                </ul>
+                            </div>
+                            <div class="jp-no-solution" style="display:none;" >
+                                <span>Update Required</span>
+                                To play the media you will need to either update your browser to a recent version or update your <a href="http://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a>.
+                            </div>
+                        </div>
                     </div>
                     <!-- jplayer end -->
                 </div>
@@ -149,18 +165,9 @@
     </script>
     <script src="js/vendor/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/jquery.jplayer.min.js"></script>
-    <script type="text/javascript" src="js/jquery.transform2d.js"></script>
-    <script type="text/javascript" src="js/jquery.grab.js"></script>
-    <script type="text/javascript" src="js/mod.csstransforms.min.js"></script>
-    <script type="text/javascript" src="js/circle.player.js"></script>
+    <script type="text/javascript" src="js/jplayer.playlist.min.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
-    <!--[if lt IE 9]>
-<bgsound src="http://marklv.qiniudn.com/marklv1.mp3"/>
-<![endif]-->
-    <!--  <audio autoplay="autoplay">
-        <source src="http://marklv.qiniudn.com/marklv1.mp3" type="audio/mpeg" />
-    </audio> -->
 </body>
 
 </html>

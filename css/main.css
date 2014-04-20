@@ -2,8 +2,11 @@
    Author's custom styles
    ========================================================================== */
  .jumbotron {
-    background-image: url("../img/jumbotronbg.jpg");
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-    background-size: cover;
+    background-image:url("http://marklv.qiniudn.com/imgjumbotronbg.jpg");
+    background-repeat:no-repeat;
+    background-attachment:scroll;
+    background-size:100%;
+    background-position:top;
+    overflow: hidden;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://marklv.qiniudn.com/imgjumbotronbg.jpg', sizingMethod='scale');
 }
