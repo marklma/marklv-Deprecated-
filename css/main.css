@@ -13,3 +13,8 @@
 .navbar-default {
   background-image: linear-gradient(to bottom, #99CC00 0px, #F8F8F8 100%);
 }
+.wrapper {
+  max-width: 660px;
+  padding: 0 20px 40px 20px;
+  margin: auto;
+}

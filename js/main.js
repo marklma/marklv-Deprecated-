@@ -1,6 +1,5 @@
 //<![CDATA[
-$(document).ready(function() {
-    var jcp_pause = $(".jp-pause");
+$(function() {
     new jPlayerPlaylist({
         jPlayer: "#jquery_jplayer_1",
         cssSelectorAncestor: "#jp_container_1"
@@ -32,6 +31,15 @@ $(document).ready(function() {
         supplied: "mp3, oga",
         preload: "auto",
         wmode: "window"
+    });
+
+    $('[data-jcarousel]').each(function() {
+        var el = $(this);
+        el.jcarousel(el.data());
+    });
+    $('[data-jcarousel-control]').each(function() {
+        var el = $(this);
+        el.jcarouselControl(el.data());
     });
 });
 //]]>
