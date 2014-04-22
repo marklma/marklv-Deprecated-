@@ -39,7 +39,7 @@
   text-align: center;
   border-top: 1px solid #e5e5e5;
   background-color: #FFFFCC;
-  filter: progid:DXImageTransform.Microsoft.Gradient(startColorStr='#F8F8F8', endColorStr='#FFCC00 ', gradientType='0');
+  filter: progid:DXImageTransform.Microsoft.Gradient(startColorStr='#F8F8F8', endColorStr='#FFCC00', gradientType='0');
   background-image: linear-gradient(to bottom, #F8F8F8 0px, #FFCC00 100%);
   background: -moz-linear-gradient(top, #F8F8F8, #FFCC00);
   background: -o-linear-gradient(top, #F8F8F8, #FFCC00);
