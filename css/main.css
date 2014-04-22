@@ -2,19 +2,46 @@
    Author's custom styles
    ========================================================================== */
  .jumbotron {
-  background-image:url("http://marklv.qiniudn.com/imgjumbotronbg.jpg");
+  background-image:url("//marklv.qiniudn.com/imgjumbotronbg.jpg");
   background-repeat:no-repeat;
   background-attachment:scroll;
   background-size:100%;
   background-position:top;
   overflow: hidden;
-  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://marklv.qiniudn.com/imgjumbotronbg.jpg', sizingMethod='scale');
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='//marklv.qiniudn.com/imgjumbotronbg.jpg', sizingMethod='scale');
 }
 .navbar-default {
+  background-color: #FFCC99;
+  filter: progid:DXImageTransform.Microsoft.Gradient(startColorStr='#99CC00', endColorStr='#F8F8F8', gradientType='0');
   background-image: linear-gradient(to bottom, #99CC00 0px, #F8F8F8 100%);
+  background: -moz-linear-gradient(top, #99CC00, #F8F8F8);
+  background: -o-linear-gradient(top, #99CC00, #F8F8F8);
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#99CC00), to(#F8F8F8));
 }
 .wrapper {
   max-width: 660px;
   padding: 0 20px 40px 20px;
   margin: auto;
+}
+@media (min-width: 768px) {
+  .bs-footer {
+    text-align: left;
+  }
+  .bs-footer p {
+    margin-bottom: 0;
+  }
+}
+.bs-footer {
+  padding-top: 40px;
+  padding-bottom: 30px;
+  margin-top: 100px;
+  color: #777;
+  text-align: center;
+  border-top: 1px solid #e5e5e5;
+  background-color: #FFFFCC;
+  filter: progid:DXImageTransform.Microsoft.Gradient(startColorStr='#F8F8F8', endColorStr='#FFCC00 ', gradientType='0');
+  background-image: linear-gradient(to bottom, #F8F8F8 0px, #FFCC00 100%);
+  background: -moz-linear-gradient(top, #F8F8F8, #FFCC00);
+  background: -o-linear-gradient(top, #F8F8F8, #FFCC00);
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#F8F8F8), to(#FFCC00));
 }
