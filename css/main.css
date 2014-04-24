@@ -8,6 +8,9 @@
   border-radius:0;
   filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='//marklv.qiniudn.com/imgjumbotronbg.jpg', sizingMethod='scale');
 }
+.hero-unit p {
+  margin-bottom: 15px;
+}
 .navbar-inner {
   background-color: #FFCC99;
   background-image: linear-gradient(to bottom, #99CC00 0px, #F8F8F8 100%);
