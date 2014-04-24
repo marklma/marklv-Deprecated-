@@ -1,12 +1,12 @@
 .hero-unit {
-  background-image:url(//marklv.qiniudn.com/imgjumbotronbg.jpg);
+  background-image:url(//marklv.qiniudn.com/img/jumbotronbg.jpg);
   background-repeat:no-repeat;
   background-attachment:scroll;
   background-size:100%;
   background-position:top;
   overflow: hidden;
   border-radius:0;
-  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='//marklv.qiniudn.com/imgjumbotronbg.jpg', sizingMethod='scale');
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='//marklv.qiniudn.com/img/jumbotronbg.png', sizingMethod='scale');
 }
 .hero-unit p {
   margin-bottom: 15px;
