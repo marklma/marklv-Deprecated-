@@ -24,25 +24,27 @@
   padding: 0 20px 40px 20px;
   margin: auto;
 }
-@media (min-width: 768px) {
-  .bs-footer {
-    text-align: left;
-  }
-  .bs-footer p {
-    margin-bottom: 0;
-  }
-}
-.bs-footer {
-  padding-top: 40px;
-  padding-bottom: 30px;
-  margin-top: 100px;
-  color: #777;
-  text-align: center;
-  border-top: 1px solid #e5e5e5;
-  background-color: #FFFFCC;
+.footer {
   background-image: linear-gradient(to bottom, #F8F8F8 0px, #FFCC00 100%);
   background: -moz-linear-gradient(top, #F8F8F8, #FFCC00);
   background: -o-linear-gradient(top, #F8F8F8, #FFCC00);
   background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#F8F8F8), to(#FFCC00));
   filter: progid:DXImageTransform.Microsoft.Gradient(startColorStr='#F8F8F8', endColorStr='#FFCC00', gradientType='0');
+  padding-top: 40px;
+  padding-bottom: 30px;
+  margin-top: 100px;
+  text-align: center;
+  border-top: 1px solid #e5e5e5;
+}
+@media (min-width: 768px) {
+  .footer {
+    text-align: left;
+  }
+  .footer p {
+    margin-bottom: 0;
+  }
+}
+.jcarousel img {
+  width:600;
+  height:400;
 }
