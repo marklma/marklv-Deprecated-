@@ -1,3 +1,21 @@
+body {
+  cursor:url(../img/arrow.cur), auto;
+  /*  cursor:url(../img/cross.cur), crosshair;*/
+  cursor:url(../img/arrow.cur), default;
+  /*  cursor:url(../img/help.ani), help;
+  cursor:url(../img/sizeall.cur), move;
+  cursor:url(../img/wait.ani), progress;
+  cursor:url(../img/ibeam.cur), text;
+  cursor:url(../img/wait.ani), wait;
+  cursor:url(../img/sizewe.cur), e-resize;
+  cursor:url(../img/sizenesw.cur), ne-resize;
+  cursor:url(../img/sizenwse.cur), nw-resize;
+  cursor:url(../img/sizens.cur), n-resize;
+  cursor:url(../img/sizenwse.cur), se-resize;
+  cursor:url(../img/sizenesw.cur), sw-resize;
+  cursor:url(../img/sizens.cur), s-resize;
+  cursor:url(../img/sizewe.cur), w-resize;*/
+}
 .hero-unit {
   background-image:url(//marklv.qiniudn.com/img/jumbotronbg.jpg);
   background-repeat:no-repeat;
@@ -47,4 +65,7 @@
 .jcarousel img {
   width:600;
   height:400;
+}
+.jcarousel-control-prev, .jcarousel-control-next,.jp-pause,.jp-play {
+  cursor:url(../img/hand.ani), pointer;
 }
