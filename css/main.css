@@ -1,20 +1,19 @@
 body {
-  cursor:url(../img/arrow.cur), auto;
-  /*  cursor:url(../img/cross.cur), crosshair;*/
-  cursor:url(../img/arrow.cur), default;
-  /*  cursor:url(../img/help.ani), help;
-  cursor:url(../img/sizeall.cur), move;
-  cursor:url(../img/wait.ani), progress;
-  cursor:url(../img/ibeam.cur), text;
-  cursor:url(../img/wait.ani), wait;
-  cursor:url(../img/sizewe.cur), e-resize;
-  cursor:url(../img/sizenesw.cur), ne-resize;
-  cursor:url(../img/sizenwse.cur), nw-resize;
-  cursor:url(../img/sizens.cur), n-resize;
-  cursor:url(../img/sizenwse.cur), se-resize;
-  cursor:url(../img/sizenesw.cur), sw-resize;
-  cursor:url(../img/sizens.cur), s-resize;
-  cursor:url(../img/sizewe.cur), w-resize;*/
+  /*  cursor:url(//marklv.qiniudn.com/img/cross.ico), crosshair;*/
+  cursor:url(//marklv.qiniudn.com/img/Arrow.ico), auto;
+  /*  cursor:url(//marklv.qiniudn.com/img/help.ico), help;
+  cursor:url(//marklv.qiniudn.com/img/sizeall.ico), move;
+  cursor:url(//marklv.qiniudn.com/img/wait.ico), progress;
+  cursor:url(//marklv.qiniudn.com/img/ibeam.ico), text;
+  cursor:url(//marklv.qiniudn.com/img/wait.ico), wait;
+  cursor:url(//marklv.qiniudn.com/img/sizewe.ico), e-resize;
+  cursor:url(//marklv.qiniudn.com/img/sizenesw.ico), ne-resize;
+  cursor:url(//marklv.qiniudn.com/img/sizenwse.ico), nw-resize;
+  cursor:url(//marklv.qiniudn.com/img/sizens.ico), n-resize;
+  cursor:url(//marklv.qiniudn.com/img/sizenwse.ico), se-resize;
+  cursor:url(//marklv.qiniudn.com/img/sizenesw.ico), sw-resize;
+  cursor:url(//marklv.qiniudn.com/img/sizens.ico), s-resize;
+  cursor:url(//marklv.qiniudn.com/img/sizewe.ico), w-resize;*/
 }
 .hero-unit {
   background-image:url(//marklv.qiniudn.com/img/jumbotronbg.jpg);
@@ -66,6 +65,6 @@ body {
   width:600;
   height:400;
 }
-.jcarousel-control-prev, .jcarousel-control-next,.jp-pause,.jp-play {
-  cursor:url(../img/hand.ani), pointer;
+.jcarousel-control-prev, .jcarousel-control-next, .jp-pause, .jp-play {
+  cursor:url(//marklv.qiniudn.com/img/uparrow.ico), auto;
 }
