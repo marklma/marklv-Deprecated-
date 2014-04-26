@@ -65,6 +65,6 @@ body {
   width:600;
   height:400;
 }
-.jcarousel-control-prev, .jcarousel-control-next, .jp-pause, .jp-play {
-  cursor:url(//marklv.qiniudn.com/img/uparrow.ico), auto;
+button, a, .uparrowpointer {
+  cursor:url(//marklv.qiniudn.com/img/uparrow.ico), pointer ! important;
 }
