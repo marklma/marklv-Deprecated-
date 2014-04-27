@@ -23,6 +23,7 @@ body {
   background-position:top;
   overflow: hidden;
   border-radius:0;
+  background-color: #268BBF;
   filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='//marklv.qiniudn.com/img/jumbotronbg.png', sizingMethod='scale');
 }
 .hero-unit p {
@@ -62,9 +63,38 @@ body {
   }
 }
 .jcarousel img {
-  width:600;
-  height:400;
+  width:600px;
+  height:400px;
 }
-button, a, .uparrowpointer {
+button, a {
   cursor:url(//marklv.qiniudn.com/img/uparrow.ico), pointer ! important;
+  cursor:url(//marklv.qiniudn.com/img/uparrow.ico), pointer;
+}
+.jCiefixprev, .jCiefixnext {
+  width:56px;
+  height:90px;
+}
+.jCiefixprev {
+  background:url(../img/leftblueheart.png) no-repeat;
+}
+.jCiefixnext {
+  background:url(../img/rightblueheart.png) no-repeat;
+}
+@media (max-width: 768px) {
+  .jcarousel, .jcarousel img {
+    width:480px;
+    height:320px;
+  }
+  .jcarousel-wrapper {
+    height:320px;
+  }
+}
+@media (max-width: 480px) {
+  .jcarousel, .jcarousel img {
+    width:320px;
+    height:200px;
+  }
+  .jcarousel-wrapper {
+    height:200px;
+  }
 }
