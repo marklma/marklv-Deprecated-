@@ -18,9 +18,9 @@
   <link rel="stylesheet" href="css/bootstrap-responsive.min.css">
 
   <link rel="stylesheet" href="css/skin/circle.skin/circle.player.min.css">
-  <link rel="stylesheet" href="css/main.css">
-
   <link rel="stylesheet" href="css/jcarousel.data-attributes.css">
+
+  <link rel="stylesheet" href="css/main.css">
 
   <link type="text/plain" rel="author" href="humans.txt">
   <link rel="icon" href="favicon.ico" type="image/x-icon">
@@ -70,8 +70,7 @@
           </p>
           <p></p>
         </div>
-        <div class="span3"></div>
-        <div class="span4 hidden-phone">
+        <div class="span4 offset3 hidden-phone">
           <br>
           <!-- The jPlayer div must not be hidden. Keep it at the root of the body element to avoid any such problems. -->
           <div id="jquery_jplayer_1" class="jp-jplayer"></div>
@@ -106,65 +105,66 @@
     </div>
   </div>
 
-  <div class="container">
-    <div class="row">
-      <div class="span12">
-        <!-- jCarousels -->
-        <div class="wrapper">
-          <h2>Carousels using data-* attributes</h2>
-          <div class="jcarousel-wrapper">
-            <div data-jcarousel="true" data-wrap="circular" class="jcarousel">
-              <ul>
-                <li>
-                  <img src="img/img1.jpg" alt=":(图片没啦…但我的心意还在:)">
-                </li>
-                <li>
-                  <img src="img/img2.jpg" alt=":(图片没啦…但我的心意还在:)">
-                </li>
-                <li>
-                  <img src="img/img3.jpg" alt=":(图片没啦…但我的心意还在:)">
-                </li>
-                <li>
-                  <img src="img/img4.jpg" alt=":(图片没啦…但我的心意还在:)">
-                </li>
-                <li>
-                  <img src="img/img5.jpg" alt=":(图片没啦…但我的心意还在:)">
-                </li>
-                <li>
-                  <img src="img/img6.jpg" alt=":(图片没啦…但我的心意还在:)">
-                </li>
-              </ul>
-            </div>
-            <p class="photo-credits">
-              Produce by <a href="http://www.weibo.com/marklma">Mark L Ma from Internet</a>
-            </p>
-            <a data-jcarousel-control="true" data-target="-=1" href="#" class="jcarousel-control-prev">
-              <div class="jCiefixprev"></div>
-            </a>
-            <a data-jcarousel-control="true" data-target="+=1" href="#" class="jcarousel-control-next">
-              <div class="jCiefixnext"></div>
-            </a>
-          </div>
-        </div>
-        <!-- end jCarousels -->
-      </div>
-    </div>
-    <div class="row">
-      <div class="span12">
-        <h2>Heading</h2>
-        <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
-        <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a>
-        </p>
-      </div>
-    </div>
-  </div>
-  <!-- /container -->
-  <div class="footer">
+  <div id="main-wrapper">
     <div class="container">
-      <p>&copy; Mark.L.Ma 2014 - A webside for my girl(wishful,:P).</p>
+      <div class="row">
+        <div class="span12">
+          <!-- jCarousels -->
+          <div class="wrapper">
+            <h3 class="text-center">Carousels using data-* attributes</h3>
+            <div class="jcarousel-wrapper">
+              <div data-jcarousel="true" data-wrap="circular" class="jcarousel">
+                <ul>
+                  <li>
+                    <img src="img/img1.jpg" alt=":(图片没啦…但我的心意还在:)">
+                  </li>
+                  <li>
+                    <img src="img/img2.jpg" alt=":(图片没啦…但我的心意还在:)">
+                  </li>
+                  <li>
+                    <img src="img/img3.jpg" alt=":(图片没啦…但我的心意还在:)">
+                  </li>
+                  <li>
+                    <img src="img/img4.jpg" alt=":(图片没啦…但我的心意还在:)">
+                  </li>
+                  <li>
+                    <img src="img/img5.jpg" alt=":(图片没啦…但我的心意还在:)">
+                  </li>
+                  <li>
+                    <img src="img/img6.jpg" alt=":(图片没啦…但我的心意还在:)">
+                  </li>
+                </ul>
+              </div>
+              <p class="photo-credits">
+                Produce by <a href="http://www.weibo.com/marklma">Mark L Ma from Internet</a>
+              </p>
+              <a data-jcarousel-control="true" data-target="-=1" href="#" class="jcarousel-control-prev">
+                <div class="jCiefixprev"></div>
+              </a>
+              <a data-jcarousel-control="true" data-target="+=1" href="#" class="jcarousel-control-next">
+                <div class="jCiefixnext"></div>
+              </a>
+            </div>
+          </div>
+          <!-- end jCarousels -->
+        </div>
+      </div>
+      <div class="row">
+        <div class="span10 offset1">
+          <h2>Believe it or not,it's my first love letter.</h2>
+          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
+          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a>
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- /container -->
+    <div class="footer">
+      <div class="container">
+        <p>&copy; Mark.L.Ma 2014 - A webside for my girl(wishful,:P).</p>
+      </div>
     </div>
   </div>
-
   <script src="//libs.baidu.com/jquery/1.10.2/jquery.min.js"></script>
   <script>
   window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>');

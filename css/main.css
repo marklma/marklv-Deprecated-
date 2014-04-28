@@ -1,19 +1,5 @@
 body {
-  /*  cursor:url(//marklv.qiniudn.com/img/cross.ico), crosshair;*/
   cursor:url(//marklv.qiniudn.com/img/Arrow.ico), auto;
-  /*  cursor:url(//marklv.qiniudn.com/img/help.ico), help;
-  cursor:url(//marklv.qiniudn.com/img/sizeall.ico), move;
-  cursor:url(//marklv.qiniudn.com/img/wait.ico), progress;
-  cursor:url(//marklv.qiniudn.com/img/ibeam.ico), text;
-  cursor:url(//marklv.qiniudn.com/img/wait.ico), wait;
-  cursor:url(//marklv.qiniudn.com/img/sizewe.ico), e-resize;
-  cursor:url(//marklv.qiniudn.com/img/sizenesw.ico), ne-resize;
-  cursor:url(//marklv.qiniudn.com/img/sizenwse.ico), nw-resize;
-  cursor:url(//marklv.qiniudn.com/img/sizens.ico), n-resize;
-  cursor:url(//marklv.qiniudn.com/img/sizenwse.ico), se-resize;
-  cursor:url(//marklv.qiniudn.com/img/sizenesw.ico), sw-resize;
-  cursor:url(//marklv.qiniudn.com/img/sizens.ico), s-resize;
-  cursor:url(//marklv.qiniudn.com/img/sizewe.ico), w-resize;*/
 }
 .hero-unit {
   background-image:url(//marklv.qiniudn.com/img/jumbotronbg.jpg);
@@ -24,6 +10,7 @@ body {
   overflow: hidden;
   border-radius:0;
   background-color: #268BBF;
+  background-position:top;
   filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='//marklv.qiniudn.com/img/jumbotronbg.png', sizingMethod='scale');
 }
 .hero-unit p {
@@ -53,6 +40,7 @@ body {
   margin-top: 100px;
   text-align: center;
   border-top: 1px solid #e5e5e5;
+  z-index: 1;
 }
 @media (min-width: 768px) {
   .footer {
@@ -69,6 +57,13 @@ body {
 button, a {
   cursor:url(//marklv.qiniudn.com/img/uparrow.ico), pointer ! important;
   cursor:url(//marklv.qiniudn.com/img/uparrow.ico), pointer;
+}
+#main-wrapper {
+  width:100%;
+  background-image:url(../img/bg0.jpg);
+  background-size:100%;
+  background-repeat:repeat-y;
+  background-position:top;
 }
 .jCiefixprev, .jCiefixnext {
   width:56px;
