@@ -1,4 +1,3 @@
-# humanstxt.org/
 # The humans responsible & technology colophon
 
 # TEAM
@@ -8,16 +7,16 @@
 # THANKS
 
     Vivid -- Be confessor
-	
+    
 
 # TECHNOLOGY COLOPHON
 
     HTML5, CSS3, javascript
     jQuery, Modernizr
-	bootstrap
-	
+    bootstrap2, jPlayer, jCarousel
+    
 # Site
-	Last update:2014/05/04
-	Language: Chinese
-	Doctype:HTML5
-	IDE: Sublime Text2, Notepad++, Photoshop
+    Last update:2014/05/20
+    Language: Chinese
+    Doctype: HTML5
+    IDE: Sublime Text, Notepad++, eclipse
