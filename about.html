@@ -27,17 +27,26 @@
   <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
   <style type="text/css">
   .helpwrapper {
-    background-image:url('//marklv.qiniudn.com/img/helpwrapper.jpg');
+    background-image:url(//marklv.qiniudn.com/img/helpwrapper.jpg);
     background-repeat:repeat-y;
     width:100%;
     height:100%;
     background-attachment:scroll;
     background-size:100%;
-    background-position:top;
+    background-position:center;
     overflow: hidden;
     position:absolute;
     z-index: -1;
     filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='//marklv.qiniudn.com/img/helpwrapper.jpg', sizingMethod='scale');
+  }
+  body {
+    padding-bottom: 75px;
+  }
+  #projiframe {
+    z-index: 1000;
+    filter:alpha(Opacity=100);
+    -moz-opacity:1;
+    opacity: 1;
   }
   </style>
 </head>
@@ -64,7 +73,6 @@
       </div>
       <!--/.nav-collapse -->
     </div>
-  </div>
   </div>
   <!-- Main jumbotron for a primary marketing message or call to action -->
   <div class="hero-unit">
@@ -103,79 +111,83 @@
       </div>
     </div>
   </div>
-  <div class="helpwrapper">
-    <div class="container">
-      <div class="row">
-        <div class="span5 offset1">
-          <h1 class="css41804" style="color:#6600FF;">Are you ready for this webside?</h1>
-          <br>&gt;&gt;
-          <a href="index.html" class="btn btn-large btn-primary" type="button" id="sure">Yes，先看看再说!</a>&lt;&lt;&nbsp;&nbsp;
-          <a href="#" class="btn btn-large btn-inverse" id="nobtn" type="button" role="button" data-toggle="modal" data-target="#myModal">发好人卡</a>
-          <p>
-            <br>
-          </p>
+  <div class="helpwrapper"></div>
+  <div class="container">
+    <div class="row">
+      <div class="span5 offset1">
+        <h1 class="css41804" style="color:#6600FF;">Are you ready for this webside?</h1>
+        <br>&gt;&gt;
+        <a href="index.html" class="btn btn-large btn-primary" type="button" id="sure">Yes，先看看再说!</a>&lt;&lt;&nbsp;&nbsp;
+        <a href="#" class="btn btn-large btn-inverse" id="nobtn" type="button" role="button" data-toggle="modal" data-target="#myModal">发好人卡</a>
+        <p>
+          <br>
+        </p>
+      </div>
+      <div class="span6">
+        <p></p>
+        <div class="alert alert-error hide" id="warning">
+          <button type="button" class="close" data-dismiss="alert">&times;</button>
+          <h2>:(</h2>
+          我觉得还是能抢救一下……不如先点击“
+          <strong>先看看再说!</strong>”继续看看？
+          <br>Make your decision a little later?
         </div>
-        <div class="span6">
-          <p></p>
-          <div class="alert alert-error hide" id="warning">
-            <button type="button" class="close" data-dismiss="alert">&times;</button>
-            <h2>:(</h2>
-            我觉得还是能抢救一下……不如先点击“
-            <strong>先看看再说!</strong>”继续看看？
-            <br>Make your decision a little later?
-          </div>
-          <!--[if lt IE 10]>
+        <!--[if lt IE 10]>
 <div class="alert" id="browseralert">
 <button type="button" class="close" data-dismiss="alert">&times;</button>
 <h2>浏览器要求</h2>
 <p>为了你能最好地享受这个专为你而制作网站，建议使用<a href="http://browsehappy.com/">火狐、谷歌或者Opera等非IE浏览器</a>进行浏览。</p>
 </div>
 <![endif]-->
-        </div>
-      </div>
-      <hr>
-      <div class="row">
-        <div class="span4">
-          <button class="btn btn-large btn-info" id="projhistorybtn" type="button">This project history</button>
-        </div>
-        <div class="span4">
-          <button class="btn btn-large btn-info" id="projtechbtn" type="button">This project Technology</button>
-        </div>
-        <div class="span4">
-          <button class="btn btn-large btn-info" id="projlicbtn" type="button">Opensourse License</button>
-        </div>
-      </div>
-      <div class="row">
-        <div class="span12">
-          <iframe scrolling="yes" align="center" class="hide" id="projiframe" frameborder="0" height="480px" width="100%" src="img/marklvproj.png">
-            <img src="img/marklvproj.png" height="3691" width="980">
-          </iframe>
-        </div>
       </div>
     </div>
-
-    <!-- Modal -->
-    <div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal">×</button>
-        <h3 id="myModalLabel">确定发卡？&gt;_&lt;</h3>
+    <hr>
+    <div class="row">
+      <div class="span3">
+        <button class="btn btn-large btn-info" id="projhistorybtn" type="button">The Project History</button>
       </div>
-      <div class="modal-body">
-        <p>&nbsp;&nbsp;这是我沉积内心多年的，给自己的初恋的上交的第一份答卷，如能在你未被困扰的前提下，是否先阅卷后再进行评分？</p>
+      <div class="span3">
+        <button class="btn btn-large btn-info" id="projtechbtn" type="button">The Project Technology</button>
       </div>
-      <div class="modal-footer">
-        <button class="btn btn-primary" data-dismiss="modal" aria-hidden="true" id="hesitate">犹豫一下</button>
-        <button class="btn btn-inverse" data-dismiss="modal" aria-hidden="true" id="ensurebtn">确定发卡！</button>
+      <div class="span3">
+        <button class="btn btn-large btn-info" id="projdibtn" type="button">Demand Investigation</button>
+      </div>
+      <div class="span3">
+        <button class="btn btn-large btn-info" id="projlicbtn" type="button">Opensourse License</button>
       </div>
     </div>
-
-    <!-- /container -->
-    <div class="footer css39232">
-      <div class="container">
-        <p>&copy; Mark.L.Ma 2014 - A webside for my girl (wishful,:P).</p>
+    <div class="row">
+      <div class="span12 letterDiv">
+        <iframe scrolling="auto" align="center" class="hide" id="projiframe" frameborder="0" height="460px" width="100%" src="img/marklvproj.png">
+          <img src="img/marklvproj.png" height="3691" width="980">
+          <img src="img/marklvmindmap.jpg">
+        </iframe>
       </div>
     </div>
   </div>
+
+  <!-- Modal -->
+  <div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-header">
+      <button type="button" class="close" data-dismiss="modal">×</button>
+      <h3 id="myModalLabel">确定发卡？&gt;_&lt;</h3>
+    </div>
+    <div class="modal-body">
+      <p>&nbsp;&nbsp;这是我沉积内心多年的，给自己的初恋的上交的第一份答卷，如能在你未被困扰的前提下，是否先阅卷后再进行评分？</p>
+    </div>
+    <div class="modal-footer">
+      <button class="btn btn-primary" data-dismiss="modal" aria-hidden="true" id="hesitate">犹豫一下</button>
+      <button class="btn btn-inverse" data-dismiss="modal" aria-hidden="true" id="ensurebtn">确定发卡！</button>
+    </div>
+  </div>
+
+  <!-- /container -->
+  <div class="navbar-fixed-bottom footer css39232">
+    <div class="container">
+      <p>&copy; Mark.L.Ma 2014 - A webside for my girl (wishful,:P).</p>
+    </div>
+  </div>
+
   <script src="//libs.baidu.com/jquery/1.10.2/jquery.min.js"></script>
   <script>
   window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>');
@@ -209,17 +221,21 @@
       browseralert_jq.show();
     });
     var projiframe_jq = $("#projiframe");
+
+    function changeIframeSrc(iframeSrc) {
+      projiframe_jq.show().attr("src", iframeSrc);
+    }
     $("#projhistorybtn").click(function() {
-      projiframe_jq.show();
-      projiframe_jq.attr("src", "img/marklvproj.png");
+      changeIframeSrc("img/marklvproj.png");
     });
     $("#projtechbtn").click(function() {
-      projiframe_jq.show();
-      projiframe_jq.attr("src", "humans.txt");
+      changeIframeSrc("humans.txt");
     });
     $("#projlicbtn").click(function() {
-      projiframe_jq.show();
-      projiframe_jq.attr("src", "LICENSE");
+      changeIframeSrc("LICENSE");
+    });
+    $("#projdibtn").click(function() {
+      changeIframeSrc("img/marklvmindmap.jpg");
     });
   });
   //]]>

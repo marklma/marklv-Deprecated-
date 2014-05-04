@@ -19,13 +19,19 @@ body {
   color: #99FF00;
   font-size: 22px;
 }
-#letterDiv {
+.letterDiv {
   filter:alpha(Opacity=60);
-  -moz-opacity:0.5;
-  opacity: 0.5;
-  z-index:100;
+  -moz-opacity:0.6;
+  opacity: 0.6;
+  z-index:10;
   background-color:#FFFFCC;
   padding: 20px 30px 20px 30px;
+}
+#projiframe {
+  filter:alpha(Opacity=1);
+  -moz-opacity:1;
+  opacity: 1;
+  z-index:100;
 }
 .navbar-inner {
   background: #99CC00;
@@ -67,7 +73,7 @@ body {
   /* W3C */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f8ffe8', endColorstr='#ffcc00', GradientType=0);
   /* IE6-9 */
-  padding-top: 40px;
+  padding-top: 35px;
   padding-bottom: 30px;
   margin-top: 50px;
   text-align: center;
