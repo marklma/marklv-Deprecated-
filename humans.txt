@@ -11,12 +11,17 @@
 
 # TECHNOLOGY COLOPHON
 
-    HTML5, CSS3, javascript
+    HTML5, CSS, javascript
     jQuery, Modernizr
     bootstrap2, jPlayer, jCarousel
     
 # Site
+
     Last update:2014/05/20
     Language: Chinese
     Doctype: HTML5
     IDE: Sublime Text, Notepad++, eclipse
+
+# CDN & App Engine & VM
+	
+	baidu、qiniu、jcloud、github、osc@git

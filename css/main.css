@@ -21,11 +21,12 @@ body {
 }
 .letterDiv {
   filter:alpha(Opacity=60);
-  -moz-opacity:0.6;
-  opacity: 0.6;
+  -moz-opacity: .6;
+  opacity: .6;
   z-index:10;
   background-color:#FFFFCC;
   padding: 20px 30px 20px 30px;
+  margin-bottom: 35px;
 }
 #projiframe {
   filter:alpha(Opacity=1);
@@ -75,7 +76,6 @@ body {
   /* IE6-9 */
   padding-top: 35px;
   padding-bottom: 30px;
-  margin-top: 50px;
   text-align: center;
   border-top: 1px solid #e5e5e5;
   z-index: 1;

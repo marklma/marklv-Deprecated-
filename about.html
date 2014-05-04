@@ -10,6 +10,11 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <title>MarkLV - A webside for my Goddess</title>
+  <script>
+  //<![CDATA[
+  var starter = document.getElementById("starter");
+  //]]>
+  </script>
   <meta name="keywords" content="Mark,Love,Vivid,尚玎,表白,first,暗恋,初恋">
   <meta name="author" content="Mark">
   <meta name="description" content="Markの告白">
@@ -26,21 +31,27 @@
 
   <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
   <style type="text/css">
+  #starter {
+    position:fixed;
+    z-index: 2000;
+    background-color: #99FFFF;
+    width:100%;
+    height:100%;
+  }
   .helpwrapper {
-    background-image:url(//marklv.qiniudn.com/img/helpwrapper.jpg);
+    background-image:url('//marklv.qiniudn.com/img/helpwrapper.jpg');
     background-repeat:repeat-y;
     width:100%;
     height:100%;
     background-attachment:scroll;
     background-size:100%;
-    background-position:center;
-    overflow: hidden;
+    background-position:center center;
     position:absolute;
     z-index: -1;
     filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='//marklv.qiniudn.com/img/helpwrapper.jpg', sizingMethod='scale');
   }
   body {
-    padding-bottom: 75px;
+    margin-bottom: 65px;
   }
   #projiframe {
     z-index: 1000;
@@ -52,6 +63,7 @@
 </head>
 
 <body>
+  <div id="starter"></div>
   <!--[if lt IE 8]>
   <p class="text-center alert alert-danger">您使用的浏览器已经<strong>过时</strong>。为了让您有更好的体验，请<a href="http://browsehappy.com/">升级您的浏览器</a>。</p>
   <![endif]-->
@@ -158,7 +170,7 @@
     </div>
     <div class="row">
       <div class="span12 letterDiv">
-        <iframe scrolling="auto" align="center" class="hide" id="projiframe" frameborder="0" height="460px" width="100%" src="img/marklvproj.png">
+        <iframe scrolling="auto" align="center" class="hide" id="projiframe" frameborder="0" height="400px" width="100%" src="img/marklvproj.png">
           <img src="img/marklvproj.png" height="3691" width="980">
           <img src="img/marklvmindmap.jpg">
         </iframe>
@@ -223,7 +235,7 @@
     var projiframe_jq = $("#projiframe");
 
     function changeIframeSrc(iframeSrc) {
-      projiframe_jq.show().attr("src", iframeSrc);
+      projiframe_jq.show("fast").attr("src", iframeSrc);
     }
     $("#projhistorybtn").click(function() {
       changeIframeSrc("img/marklvproj.png");
@@ -244,5 +256,16 @@
 <link href='//www.youziku.com/webfont/NameCSS/39232' rel='stylesheet'>
 <link href='//www.youziku.com/webfont/NameCSS/41804' rel='stylesheet'>
 <link href='//www.youziku.com/webfont/CSS/cf617e1f93a3e98a7b72a3e01342148e' rel='stylesheet'>
+<script>
+starter = $("#starter");
+starter.animate({
+    height: 0,
+    opacity: 0
+  },
+  "slow", function() {
+    starter.remove();
+    starter = null;
+  });
+</script>
 
 </html>
