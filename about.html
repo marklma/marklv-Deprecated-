@@ -10,26 +10,44 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <title>MarkLV - A webside for my Goddess</title>
+  <script src="//libs.baidu.com/jquery/1.10.2/jquery.min.js"></script>
   <script>
   //<![CDATA[
-  var starter = document.getElementById("starter");
+  window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>');
+  $(function() {
+    var shapeblue_jq = $("#shapeblue");
+    var shapepink_jq = $("#shapepink");
+    shapeblue_jq.css("left", ($(window).width() / 2) - shapeblue_jq.width());
+    var bluepos = shapeblue_jq.position();
+    var movex = shapeblue_jq.width() + 4;
+    shapepink_jq.css("left", bluepos.left + movex);
+
+    function moveleft(el) {
+      el.animate({
+        left: '+=' + movex
+      }, 800, function() {
+        el.css("z-index", "-100");
+      });
+    }
+
+    function moveright(el) {
+      el.animate({
+        left: '-=' + movex
+      }, 800, function() {
+        el.css("z-index", "100");
+      });
+    }
+
+    function playAnimation() {
+      moveleft(shapeblue_jq);
+      moveright(shapeblue_jq);
+      moveright(shapepink_jq);
+      moveleft(shapepink_jq);
+    }
+    setInterval(playAnimation, 100);
+  });
   //]]>
   </script>
-  <meta name="keywords" content="Mark,Love,Vivid,尚玎,表白,first,暗恋,初恋">
-  <meta name="author" content="Mark">
-  <meta name="description" content="Markの告白">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="css/bootstrap.min.css" media="screen">
-  <link rel="stylesheet" href="css/bootstrap-responsive.min.css">
-
-  <link rel="stylesheet" href="css/main.css">
-
-  <link type="text/plain" rel="author" href="humans.txt">
-  <link rel="icon" href="favicon.ico" type="image/x-icon">
-  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-  <link rel="apple-touch-icon-precomposed" href="apple-touch-icon-precomposed.png">
-
-  <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
   <style type="text/css">
   #starter {
     position:fixed;
@@ -37,6 +55,34 @@
     background-color: #99FFFF;
     width:100%;
     height:100%;
+    padding-top: 200px;
+  }
+  .bartext {
+    margin-top: 120px;
+  }
+  .bar, #starter {
+    vertical-align: middle;
+    text-align:center;
+  }
+  .bar {
+    width: 250px;
+    height: 250px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    margin-right: 2px;
+    position: absolute;
+  }
+  #shapeblue {
+    background: #0063dc;
+    z-index: 1;
+  }
+  #shapepink {
+    background: #ff0084;
+    z-index: 0;
+  }
+  body {
+    margin-bottom: 65px;
   }
   .helpwrapper {
     background-image:url('//marklv.qiniudn.com/img/helpwrapper.jpg');
@@ -50,9 +96,6 @@
     z-index: -1;
     filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='//marklv.qiniudn.com/img/helpwrapper.jpg', sizingMethod='scale');
   }
-  body {
-    margin-bottom: 65px;
-  }
   #projiframe {
     z-index: 1000;
     filter:alpha(Opacity=100);
@@ -60,13 +103,34 @@
     opacity: 1;
   }
   </style>
+  <meta name="keywords" content="Mark,Love,Vivid,尚玎,表白,first,暗恋,初恋">
+  <meta name="author" content="Mark">
+  <meta name="description" content="Markの告白">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.min.css" media="screen">
+  <link rel="stylesheet" href="css/bootstrap-responsive.min.css">
+  <link rel="stylesheet" href="css/main.css">
+
+  <link type="text/plain" rel="author" href="humans.txt">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon-precomposed" href="apple-touch-icon-precomposed.png">
+  <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
 </head>
 
 <body>
-  <div id="starter"></div>
   <!--[if lt IE 8]>
   <p class="text-center alert alert-danger">您使用的浏览器已经<strong>过时</strong>。为了让您有更好的体验，请<a href="http://browsehappy.com/">升级您的浏览器</a>。</p>
-  <![endif]-->
+<![endif]-->
+  <div id="starter">
+    <h1>Loading...</h1>
+    <div id="shapeblue" class="bar">
+      <div class="bartext">Loading</div>
+    </div>
+    <div id="shapepink" class="bar">
+      <div class="bartext">Loading</div>
+    </div>
+  </div>
   <div class="navbar navbar-static-top css39232">
     <div class="navbar-inner">
       <div class="container">
@@ -185,7 +249,7 @@
       <h3 id="myModalLabel">确定发卡？&gt;_&lt;</h3>
     </div>
     <div class="modal-body">
-      <p>&nbsp;&nbsp;这是我沉积内心多年的，给自己的初恋的上交的第一份答卷，如能在你未被困扰的前提下，是否先阅卷后再进行评分？</p>
+      <p>&nbsp;&nbsp;这是我沉积内心多年的，给自己的初恋、暗恋的交上的第一份答卷，如能在你未被困扰的前提下，是否先阅卷后再进行评分？</p>
     </div>
     <div class="modal-footer">
       <button class="btn btn-primary" data-dismiss="modal" aria-hidden="true" id="hesitate">犹豫一下</button>
@@ -199,13 +263,8 @@
       <p>&copy; Mark.L.Ma 2014 - A webside for my girl (wishful,:P).</p>
     </div>
   </div>
-
-  <script src="//libs.baidu.com/jquery/1.10.2/jquery.min.js"></script>
-  <script>
-  window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>');
-  </script>
-  <script src="js/vendor/bootstrap.min.js"></script>
   <script src="js/plugins.js"></script>
+  <script src="js/vendor/bootstrap.min.js"></script>
   <script>
   //<![CDATA[
   $(function() {
@@ -257,15 +316,19 @@
 <link href='//www.youziku.com/webfont/NameCSS/41804' rel='stylesheet'>
 <link href='//www.youziku.com/webfont/CSS/cf617e1f93a3e98a7b72a3e01342148e' rel='stylesheet'>
 <script>
-starter = $("#starter");
-starter.animate({
-    height: 0,
-    opacity: 0
-  },
-  "slow", function() {
-    starter.remove();
-    starter = null;
-  });
+$(function() {
+  var starter = $("#starter");
+  starter.animate({
+      height: 0,
+      opacity: 0
+    },
+    "slow", function() {
+      starter.empty().remove();
+      shapeblue_jq = null;
+      shapepink_jq = null;
+      starter = null;
+    });
+});
 </script>
 
 </html>

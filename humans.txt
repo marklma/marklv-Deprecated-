@@ -21,7 +21,6 @@
     Language: Chinese
     Doctype: HTML5
     IDE: Sublime Text, Notepad++, eclipse
-
-# CDN & App Engine & VM
-	
-	baidu、qiniu、jcloud、github、osc@git
+    CDN: QiNiu, baidu cdn, bootcss cdn, jcloud
+    App Engine: jcloud
+    Version management：github, osc@git
