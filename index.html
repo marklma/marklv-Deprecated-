@@ -55,10 +55,10 @@
     background-color: #99FFFF;
     width:100%;
     height:100%;
-    padding-top: 200px;
+    padding-top: 75px;
   }
-  .bartext {
-    margin-top: 120px;
+  .loadingimg {
+    margin-top: 75px;
   }
   .bar, #starter {
     vertical-align: middle;
@@ -107,12 +107,12 @@
   <p class="text-center alert alert-danger">您使用的浏览器已经<strong>过时</strong>。为了让您有更好的体验，请<a href="http://browsehappy.com/">升级您的浏览器</a>。</p>
 <![endif]-->
   <div id="starter">
-    <h1>Loading...</h1>
+    <img src="img/loading1.gif" height="250px" width="250px" alt="Loading...">
     <div id="shapeblue" class="bar">
-      <div class="bartext">Loading</div>
+      <img src="img/loading.gif"  class="loadingimg" alt="Loading...">
     </div>
     <div id="shapepink" class="bar">
-      <div class="bartext">Loading</div>
+      <img src="img/loading.gif" class="loadingimg" alt="Loading...">
     </div>
   </div>
   <div class="navbar navbar-static-top">
@@ -263,16 +263,18 @@
 <script>
 $(function() {
   var starter = $("#starter");
-  starter.animate({
-      height: 0,
-      opacity: 0
-    },
-    "slow", function() {
-      starter.empty().remove();
-      shapeblue_jq = null;
-      shapepink_jq = null;
-      starter = null;
-    });
+  setTimeout(function() {
+    starter.animate({
+        height: 0,
+        opacity: 0
+      },
+      "slow", function() {
+        starter.empty().remove();
+        shapeblue_jq = null;
+        shapepink_jq = null;
+        starter = null;
+      });
+  }, 500);
 });
 </script>
 
