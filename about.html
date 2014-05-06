@@ -125,7 +125,7 @@
   <div id="starter">
     <img src="img/loading1.gif" height="250px" width="250px" alt="Loading...">
     <div id="shapeblue" class="bar">
-      <img src="img/loading.gif"  class="loadingimg" alt="Loading...">
+      <img src="img/loading.gif" class="loadingimg" alt="Loading...">
     </div>
     <div id="shapepink" class="bar">
       <img src="img/loading.gif" class="loadingimg" alt="Loading...">
@@ -265,22 +265,23 @@
   </div>
   <script src="js/plugins.js"></script>
   <script src="js/vendor/bootstrap.min.js"></script>
+  <script type="text/javascript" src="//marklv.jd-app.com/useripaddress.jsp"></script>
   <script>
   //<![CDATA[
   $(function() {
     $("#ensurebtn").click(function(event) {
-      $.get("http://marklv.jd-app.com/index?stage=index&answer=faka2");
+      $.get("http://marklv.jd-app.com/index?stage=index&answer=faka2&useripaddress=" + useripaddress);
       alert("|>_<|");
     });
     $("#sure").click(function(event) {
-      $.get("http://marklv.jd-app.com/index?stage=index&answer=sure")
+      $.get("http://marklv.jd-app.com/index?stage=index&answer=sure&useripaddress=" + useripaddress);
       alert("^_^");
     });
     $("#nobtn").click(function(event) {
-      $.get("http://marklv.jd-app.com/index?stage=index&answer=faka1")
+      $.get("http://marklv.jd-app.com/index?stage=index&answer=faka1&useripaddress=" + useripaddress);
     });
     $("#hesitate").click(function(event) {
-      $.get("http://marklv.jd-app.com/index?stage=index&answer=hesitate")
+      $.get("http://marklv.jd-app.com/index?stage=index&answer=hesitate&useripaddress=" + useripaddress);
     });
     var warning_jq = $("#warning");
     var browseralert_jq = $("#browseralert");
