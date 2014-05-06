@@ -109,7 +109,7 @@
   <div id="starter">
     <img src="img/loading1.gif" height="250px" width="250px" alt="Loading...">
     <div id="shapeblue" class="bar">
-      <img src="img/loading.gif"  class="loadingimg" alt="Loading...">
+      <img src="img/loading.gif" class="loadingimg" alt="Loading...">
     </div>
     <div id="shapepink" class="bar">
       <img src="img/loading.gif" class="loadingimg" alt="Loading...">
@@ -260,10 +260,10 @@
 <link href='//www.youziku.com/webfont/NameCSS/39232' rel='stylesheet'>
 <link href='//www.youziku.com/webfont/NameCSS/41804' rel='stylesheet'>
 <link href='//www.youziku.com/webfont/CSS/cf617e1f93a3e98a7b72a3e01342148e' rel='stylesheet'>
-<script>
+<script for="window" event="onload">
 $(function() {
-  var starter = $("#starter");
-  setTimeout(function() {
+  function clearLoading() {
+    var starter = $("#starter");
     starter.animate({
         height: 0,
         opacity: 0
@@ -274,7 +274,8 @@ $(function() {
         shapepink_jq = null;
         starter = null;
       });
-  }, 500);
+  }
+  window.onload = clearLoading;
 });
 </script>
 
