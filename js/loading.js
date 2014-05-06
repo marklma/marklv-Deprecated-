@@ -1,5 +1,6 @@
 //<![CDATA[
 $(function() {
+  $(".bar").show();
   var shapeblue_jq = $("#shapeblue");
   var shapepink_jq = $("#shapepink");
   shapeblue_jq.css("left", ($(window).width() / 2) - shapeblue_jq.width());

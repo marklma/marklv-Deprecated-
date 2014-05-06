@@ -45,6 +45,9 @@
     -moz-opacity:1;
     opacity: 1;
   }
+  #warning {
+    margin-top: 16px;
+  }
   </style>
   <link type="text/plain" rel="author" href="humans.txt">
   <link rel="icon" href="favicon.ico" type="image/x-icon">
@@ -58,7 +61,7 @@
   <p class="text-center alert alert-danger">您使用的浏览器已经<strong>过时</strong>。为了让您有更好的体验，请<a href="http://browsehappy.com/">升级您的浏览器</a>。</p>
 <![endif]-->
   <div id="starter">
-    <img src="img/loading1.gif" height="250px" width="250px" alt="Loading...">
+    <img src="img/loading1.gif" height="200px" width="320px" alt="Loading...">
     <div id="shapeblue" class="bar">
       <img src="img/loading.gif" class="loadingimg" alt="Loading...">
     </div>
@@ -135,7 +138,6 @@
         </p>
       </div>
       <div class="span6">
-        <p></p>
         <div class="alert alert-error hide" id="warning">
           <button type="button" class="close" data-dismiss="alert">&times;</button>
           <h2>:(</h2>
@@ -198,25 +200,23 @@
       <p>&copy; Mark.L.Ma 2014 - A webside for my girl (wishful,:P).</p>
     </div>
   </div>
-
   <script src="js/vendor/bootstrap.min.js"></script>
-  <script type="text/javascript" src="//marklv.jd-app.com/useripaddress.jsp"></script>
   <script>
   //<![CDATA[
   $(function() {
     $("#ensurebtn").click(function(event) {
-      $.get("http://marklv.jd-app.com/index?stage=index&answer=faka2&useripaddress=" + useripaddress);
+      $.get("http://marklv.jd-app.com/index?stage=index&answer=faka2");
       alert("|>_<|");
     });
     $("#sure").click(function(event) {
-      $.get("http://marklv.jd-app.com/index?stage=index&answer=sure&useripaddress=" + useripaddress);
+      $.get("http://marklv.jd-app.com/index?stage=index&answer=sure");
       alert("^_^");
     });
     $("#nobtn").click(function(event) {
-      $.get("http://marklv.jd-app.com/index?stage=index&answer=faka1&useripaddress=" + useripaddress);
+      $.get("http://marklv.jd-app.com/index?stage=index&answer=faka1");
     });
     $("#hesitate").click(function(event) {
-      $.get("http://marklv.jd-app.com/index?stage=index&answer=hesitate&useripaddress=" + useripaddress);
+      $.get("http://marklv.jd-app.com/index?stage=index&answer=hesitate");
     });
     var warning_jq = $("#warning");
     var browseralert_jq = $("#browseralert");
