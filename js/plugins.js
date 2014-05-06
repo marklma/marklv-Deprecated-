@@ -23,17 +23,15 @@
 
 // Place any jQuery/helper plugins in here.
 $(function() {
-  starter = $("#starter");
   var clearLoading = setTimeout(function() {
-    starter.animate({
+    $("#starter").animate({
         height: 0,
         opacity: 0
       },
       "slow", function() {
-        starter.empty().remove();
+        $("#starter").empty().remove();
         shapeblue_jq = null;
         shapepink_jq = null;
-        starter = null;
       });
   }, 520);
   window.onload = clearLoading;
