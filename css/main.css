@@ -25,8 +25,35 @@ body {
     opacity: .6;
     z-index:10;
     background-color:#FFFFCC;
-    padding: 20px 30px 35px 30px;
+    padding: 20px 35px 35px 35px;
     margin-bottom: 35px;
+}
+.letterDiv {
+    color:#444;
+    font-family:Georgia, Palatino, 'Palatino Linotype', Times, 'Times New Roman', "Hiragino Sans GB", "STXihei", "微软雅黑", serif;
+    font-size:18px;
+    line-height:1.5em;
+    background:#fefefe;
+    margin: 10px auto;
+    outline: solid #FAFAFA;
+}
+.letterDiv p {
+    margin:1em 0;
+}
+.letterDiv blockquote {
+    color:#666666;
+    margin:0;
+    padding-left: 3em;
+    border-left: 0.5em #EEE solid;
+}
+hr {
+    display: block;
+    height: 2px;
+    border: 0;
+    border-top: 1px solid #aaa;
+    border-bottom: 1px solid #eee;
+    margin: 1em 0;
+    padding: 0;
 }
 .questionDiv {
     background-color:#FFCCFF;

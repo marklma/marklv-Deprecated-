@@ -45,7 +45,6 @@ $(function() {
         el.jcarouselControl(el.data());
     });
     //love letter
-    $("#loveletter").load("loveletter.md");
     //更换背景图片
     var mainWrapper_jq = $("#main-wrapper");
     var bgcount = 0;
