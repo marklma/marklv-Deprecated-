@@ -29,7 +29,7 @@ $(function() {
         oga: "http://marklv.qiniudn.com/resource/annidexianjing.ogg"
     }], {
         playlistOptions: {
-            autoPlay: false
+            autoPlay: true
         },
         swfPath: "js",
         supplied: "mp3, oga",
@@ -46,28 +46,25 @@ $(function() {
     });
     $("#yesbtn").click(function() {
         $.get("http://marklv.jd-app.com/index?stage=yes&answer=yes");
-        alert("Thank you,my gril. You have a boy friend now.");
-        alert("怎么开始交往呢？唔，回复我一个“hi”怎么样？");
+        alert("(^_^)∠※\nThank you,my gril. You have a boy friend right now.");
     });
     $("#irgnorebtn").click(function() {
         $.get("http://marklv.jd-app.com/index?stage=yes&answer=ignore");
-        alert("眼泪花花+眼泪哗哗，祝你幸福！\nBut，既然没有点击No，说明还有机会，是吧？！");
+        alert("（⊙o⊙）\n眼泪花花+眼泪哗哗，祝你幸福！\nBut，既然没有点击No，说明还有机会，是吧？！");
         window.close();
     });
     $("#nobtn").click(function() {
         $.get("http://marklv.jd-app.com/index?stage=yes&answer=no");
-        alert("眼泪花花+眼泪哗哗。既然做不成男女朋友，祝你幸福……\n但是在你没有最爱并让你的幸福另一半的另一半前，我将不会放弃！temporary Bye!");
+        alert("//(ㄒoㄒ)//\n眼泪花花+眼泪哗哗。既然做不成男女朋友，祝你幸福……\n但是在你没有最爱并让你的幸福另一半的另一半前，我将不会放弃！temporary Bye!");
         window.close();
     });
-    //更换背景图片
     var mainWrapper_jq = $("#main-wrapper");
     var bgcount = 0;
-    var bgs = new Array('url(img/bg0.jpg)', 'url(img/bg1.jpg)', 'url(img/bg2.jpg)', 'url(img/bg3.jpg)');
+    var bgs = new Array('url(img/bg0.jpg)', 'url(img/bg1.jpg)', 'url(img/bg3.jpg)', 'url(img/bg2.jpg)');
 
     function changeBg() {
         bgcount++;
         bgcount = bgcount % 4;
-        // alert(bgs[bgcount]);
         mainWrapper_jq.css('background-image', bgs[bgcount]);
     }
     setInterval(changeBg, 30000);
