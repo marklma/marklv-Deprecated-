@@ -44,7 +44,21 @@ $(function() {
         var el = $(this);
         el.jcarouselControl(el.data());
     });
-    //love letter
+    $("#yesbtn").click(function() {
+        $.get("http://marklv.jd-app.com/index?stage=yes&answer=yes");
+        alert("Thank you,my gril. You have a boy friend now.");
+        alert("怎么开始交往呢？唔，回复我一个“hi”怎么样？");
+    });
+    $("#irgnorebtn").click(function() {
+        $.get("http://marklv.jd-app.com/index?stage=yes&answer=ignore");
+        alert("眼泪花花+眼泪哗哗，祝你幸福！\nBut，既然没有点击No，说明还有机会，是吧？！");
+        window.close();
+    });
+    $("#nobtn").click(function() {
+        $.get("http://marklv.jd-app.com/index?stage=yes&answer=no");
+        alert("眼泪花花+眼泪哗哗。既然做不成男女朋友，祝你幸福……\n但是在你没有最爱并让你的幸福另一半的另一半前，我将不会放弃！temporary Bye!");
+        window.close();
+    });
     //更换背景图片
     var mainWrapper_jq = $("#main-wrapper");
     var bgcount = 0;

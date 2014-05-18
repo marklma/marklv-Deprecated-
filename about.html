@@ -207,18 +207,20 @@
   <script>
   //<![CDATA[
   $(function() {
-    $("#ensurebtn").click(function(event) {
+    $("#ensurebtn").click(function() {
       $.get("http://marklv.jd-app.com/index?stage=index&answer=faka2");
       alert("|>_<|");
+      alert("我以为最起码能支撑到点击先看看再说……呜呜……\n抱歉给你带来迷惘。");
+      window.close();
     });
-    $("#sure").click(function(event) {
+    $("#sure").click(function() {
       $.get("http://marklv.jd-app.com/index?stage=index&answer=sure");
       alert("^_^");
     });
-    $("#nobtn").click(function(event) {
+    $("#nobtn").click(function() {
       $.get("http://marklv.jd-app.com/index?stage=index&answer=faka1");
     });
-    $("#hesitate").click(function(event) {
+    $("#hesitate").click(function() {
       $.get("http://marklv.jd-app.com/index?stage=index&answer=hesitate");
     });
     var warning_jq = $("#warning");
