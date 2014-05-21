@@ -5,7 +5,6 @@
 <!--[if gt IE 8]><!-->
 <html class="no-js">
 <!--<![endif]-->
-
 <head lang="zh">
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -15,18 +14,16 @@
   window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>');
   </script>
   <script src="js/loading.js"></script>
-  <link rel="stylesheet" href="css/loading.css">
+  <link rel="stylesheet" href="css/loading.min.css">
   <meta name="keywords" content="Mark,Love,Vivid,尚玎,表白,first,暗恋,初恋">
   <meta name="author" content="Mark">
   <meta name="description" content="Markの初告白">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/bootstrap.min.css" media="screen">
   <link rel="stylesheet" href="css/bootstrap-responsive.min.css">
-  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/main.min.css">
   <style type="text/css">
-  body {
-    margin-bottom: 65px;
-  }
+  body {margin-bottom: 65px;}
   .helpwrapper {
     background-image:url('//marklv.qiniudn.com/img/helpwrapper.jpg');
     background-repeat:repeat-y;
@@ -45,9 +42,7 @@
     -moz-opacity:1;
     opacity: 1;
   }
-  #warning {
-    margin-top: 16px;
-  }
+  #warning {margin-top: 16px;}
   </style>
   <link type="text/plain" rel="author" href="humans.txt">
   <link rel="icon" href="favicon.ico" type="image/x-icon">
@@ -55,11 +50,11 @@
   <link rel="apple-touch-icon-precomposed" href="apple-touch-icon-precomposed.png">
   <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
 </head>
-
 <body>
   <!--[if lt IE 8]>
   <p class="text-center alert alert-danger">您使用的浏览器已经<strong>过时</strong>。为了让您有更好的体验，请<a href="http://browsehappy.com/">升级您的浏览器</a>。</p>
 <![endif]-->
+<p class="hidden-desktop text-center alert alert-danger">为了给你带来最好的体验，建议使用电脑或笔记本电脑，使用非IE浏览器，打开声音访问此网站。</p>
   <div id="starter">
     <img src="img/loading1.gif" height="200px" width="320px" alt="Loading...">
     <div id="shapeblue" class="bar">
@@ -88,7 +83,6 @@
       <!--/.nav-collapse -->
     </div>
   </div>
-  <!-- Main jumbotron for a primary marketing message or call to action -->
   <div class="hero-unit">
     <div class="container">
       <div class="row">
@@ -181,7 +175,6 @@
       </div>
     </div>
   </div>
-
   <!-- Modal -->
   <div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-header">
@@ -196,11 +189,10 @@
       <button class="btn btn-inverse" data-dismiss="modal" aria-hidden="true" id="ensurebtn">确定发卡！</button>
     </div>
   </div>
-
   <!-- /container -->
   <div class="navbar-fixed-bottom footer css39232">
     <div class="container">
-      <p>&copy; Mark.L.Ma 2014 - A webside for my girl (wishful,:P).</p>
+      <p>&copy; <a href="http://www.weibo.com/marklma">Mark.L.Ma</a> 2014 - A webside for my girl (wishful,:P).</p>
     </div>
   </div>
   <script src="js/vendor/bootstrap.min.js"></script>
@@ -209,8 +201,7 @@
   $(function() {
     $("#ensurebtn").click(function() {
       $.get("http://marklv.jd-app.com/index?stage=index&answer=faka2");
-      alert("〒_〒");
-      alert("我以为最起码能支撑到点击先看看再说……呜呜……\n如给你带来");
+      alert("〒_〒\n我以为最起码能支撑到点击“先看看再说”……呜呜……\n");
       window.close();
     });
     $("#sure").click(function() {
@@ -238,7 +229,7 @@
       projiframe_jq.show("fast").attr("src", iframeSrc);
     }
     $("#projhistorybtn").click(function() {
-      changeIframeSrc("img/marklvproj.png");
+      changeIframeSrc("img/marklvproj.jpg");
     });
     $("#projtechbtn").click(function() {
       changeIframeSrc("humans.txt");
@@ -259,6 +250,5 @@
   <link href='//www.youziku.com/webfont/NameCSS/41804' rel='stylesheet'>
   <link href='//www.youziku.com/webfont/CSS/fa4b495792913aefc45f9d12a892ed01' rel='stylesheet'>
 </body>
-<script src="js/plugins.js"></script>
-
+<script src="js/plugins.min.js"></script>
 </html>

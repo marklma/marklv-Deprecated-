@@ -46,7 +46,7 @@ $(function() {
     });
     $("#yesbtn").click(function() {
         $.get("http://marklv.jd-app.com/index?stage=yes&answer=yes");
-        alert("(^_^)∠※\nThank you,my gril. You have a boy friend right now.");
+        alert("(^_^)∠※\nThank you, my gril. You have a boy friend right now.\n这将是最令我激动的一日。");
     });
     $("#irgnorebtn").click(function() {
         $.get("http://marklv.jd-app.com/index?stage=yes&answer=ignore");
@@ -55,7 +55,7 @@ $(function() {
     });
     $("#nobtn").click(function() {
         $.get("http://marklv.jd-app.com/index?stage=yes&answer=no");
-        alert("//(ㄒoㄒ)//\n眼泪花花+眼泪哗哗。既然做不成男女朋友，祝你幸福……\n但是在你没有最爱并让你的幸福另一半的另一半前，我将不会放弃！temporary Bye!");
+        alert("//(ㄒoㄒ)//\n眼泪花花+眼泪哗哗。既然做不成男女朋友，祝你幸福……\n但是在你没有遇到最爱你并让你的幸福另一半的另一半前，我将不会放弃！temporary Bye!");
         window.close();
     });
     var mainWrapper_jq = $("#main-wrapper");

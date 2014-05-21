@@ -20,7 +20,7 @@
     Last update:2014/05/20
     Language: Chinese
     Doctype: HTML5
-    IDE: Sublime Text, Notepad++, eclipse
+    IDE: Sublime Text, Notepad++, eclipse, conew
     CDN: QiNiu, baidu cdn, bootcss cdn, jcloud, youziku.com
     App Engine: jcloud
     Version management：github, osc@git
