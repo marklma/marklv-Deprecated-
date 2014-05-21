@@ -5,28 +5,28 @@ $(function() {
         cssSelectorAncestor: "#jp_container_1"
     }, [{
         title: "Kiss The Rain",
-        mp3: "http://marklv.qiniudn.com/resource/KissTheRain.mp3",
-        oga: "http://marklv.qiniudn.com/resource/KissTheRain.ogg"
+        mp3: "resource/KissTheRain.mp3",
+        oga: "resource/KissTheRain.ogg"
     }, {
         title: "could this be love",
-        mp3: "http://marklv.qiniudn.com/resource/couldthisbelove.mp3",
-        oga: "http://marklv.qiniudn.com/resource/couldthisbelove.ogg"
+        mp3: "resource/couldthisbelove.mp3",
+        oga: "resource/couldthisbelove.ogg"
     }, {
         title: "第一次",
-        mp3: "http://marklv.qiniudn.com/resource/firsttime.mp3",
-        oga: "http://marklv.qiniudn.com/resource/firsttime.ogg"
+        mp3: "resource/firsttime.mp3",
+        oga: "resource/firsttime.ogg"
     }, {
         title: "First Love",
-        mp3: "http://marklv.qiniudn.com/resource/FirstLove.mp3",
-        oga: "http://marklv.qiniudn.com/resource/FirstLove.ogg"
+        mp3: "resource/FirstLove.mp3",
+        oga: "resource/FirstLove.ogg"
     }, {
         title: "なきむし。",
-        mp3: "http://marklv.qiniudn.com/resource/marklv1.mp3",
-        oga: "http://marklv.qiniudn.com/resource/marklv1.ogg"
+        mp3: "resource/marklv1.mp3",
+        oga: "resource/marklv1.ogg"
     }, {
         title: "安妮的仙境",
-        mp3: "http://marklv.qiniudn.com/resource/annidexianjing.mp3",
-        oga: "http://marklv.qiniudn.com/resource/annidexianjing.ogg"
+        mp3: "resource/annidexianjing.mp3",
+        oga: "resource/annidexianjing.ogg"
     }], {
         playlistOptions: {
             autoPlay: true

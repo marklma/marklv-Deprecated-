@@ -1,8 +1,8 @@
 body {
-    cursor:url(//marklv.qiniudn.com/img/Arrow.ico), auto;
+    cursor:url(../img/Arrow.ico), auto;
 }
 .hero-unit {
-    background-image:url(//marklv.qiniudn.com/img/jumbotronbg.jpg);
+    background-image:url(../img/jumbotronbg.jpg);
     background-repeat:no-repeat;
     background-attachment:scroll;
     background-size:100%;
@@ -10,7 +10,7 @@ body {
     border-radius:0;
     background-color: #268BBF;
     background-position:top;
-    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='//marklv.qiniudn.com/img/jumbotronbg.png', sizingMethod='scale');
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/jumbotronbg.png', sizingMethod='scale');
 }
 .hero-unit p {
     margin-bottom: 15px;
@@ -125,12 +125,12 @@ hr {
     height:450px;
 }
 button, a {
-    cursor:url(//marklv.qiniudn.com/img/uparrow.ico), pointer ! important;
-    cursor:url(//marklv.qiniudn.com/img/uparrow.ico), pointer;
+    cursor:url(../img/uparrow.ico), pointer ! important;
+    cursor:url(../img/uparrow.ico), pointer;
 }
 #main-wrapper {
     width:100%;
-    background-image:url(//marklv.qiniudn.com/img/bg0.jpg);
+    background-image:url(../img/bg0.jpg);
     background-size:100%;
     background-repeat:repeat-y;
     background-position:top;
@@ -140,10 +140,10 @@ button, a {
     height:90px;
 }
 .jCiefixprev {
-    background:url(//marklv.qiniudn.com/img/leftblueheart.png) no-repeat;
+    background:url(../img/leftblueheart.png) no-repeat;
 }
 .jCiefixnext {
-    background:url(//marklv.qiniudn.com/img/rightblueheart.png) no-repeat;
+    background:url(../img/rightblueheart.png) no-repeat;
 }
 @media (max-width: 768px) {
     .jcarousel, .jcarousel img {
